@@ -27,3 +27,6 @@
 ## Check class
  * StringBuilder
  * BigDecimal
+ 
+## Check Question
+ * 4673, 1065, 2941, 1316, 1193,
