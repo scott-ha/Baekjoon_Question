@@ -17,19 +17,31 @@ public class Q_1316 {
 		int N = Integer.parseInt(br.readLine());
 		String[] word = new String[N];
 		
+		// cnt : group word
 		int cnt = 0;
-		int prev = 0;
 		
 		for(int i=0;i<N;i++) {
 			word[i] = br.readLine();
+			checkGroup(word[i]);
+		}
+		
+		br.close();
+
+	}
+	
+	public static boolean checkGroup(String input) {
+		boolean[] alphabet = new boolean[26];
+		
+		for(int i=0;i<input.length();i++) {
+			char ch = input.charAt(i);
 			
-			for(int j=0;j<word[i].length();j++) {
-				int now = word[i].charAt(j);
+			// alphabet array element to true
+			alphabet[ch-'a'] = true;
+			// check is true
+			if(alphabet[(ch-'a')-i]) {
 				
-				if(prev != now) {
-					
-				}
 			}
 		}
+		return true;
 	}
 }
